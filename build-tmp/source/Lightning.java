@@ -24,7 +24,6 @@ int cloudSize = 50;
 
 public void setup(){
 	size(500,500);
-    strokeWeight(1);
     background(255);
     noLoop();
 }
@@ -36,7 +35,6 @@ public void draw(){
         endPosX = startPosX + (int)random(-10,10);
         endPosY = startPosY + (int)random(1,10);
         line(startPosX,startPosY,endPosX,endPosY);
-        System.out.println(""+startPosX+", " +startPosY+ ", " +endPosX + ", " +endPosY);
         startPosX = endPosX;
         startPosY = endPosY;
     }
